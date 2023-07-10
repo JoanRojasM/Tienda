@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head th:fragment="head">
+        <title>Top HypeBeast Costa Rica</title>
+        <meta charset="UTF-8">
+        <meta name="Pagina Inicial" content="Pagina sobre TopHypebeast"/>
+        <meta name="Keywords" content="TopHypebeast"/> 
+        <link href="style/estilosTienda.css" rel="stylesheet" type="text/css"/>
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/js/rutinas.js}" />
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <header th:fragment="header" class="header">
+            <nav >
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <ul class="MenuGeneral">
+                        <li > 
+                            <ul class="MenuList">
+                                <li class="ItemList" ><a th:href="@{/}" class="navbar-brand"><img src="imagenes/TopHypebeast.png" width="75"/></a> </li>
+                                <li class="ItemList" ><a class="MenuLink"  th:href="@{/categoria/listado}">[[#{plantilla.categorias}]]</a></li>
+                                <li class="ItemList" ><a class="MenuLink"  th:href="@{/producto/listado}">[[#{plantilla.productos}]]</a> </li>
+                                    <a class="ItemList MenuLink droptown"
+                                        data-bs-toggle="dropdown"
+                                        href="#"
+                                        role="button"
+                                        aria-expanded="false">[[#{plantilla.asociaciones}]]</a>
+                            </ul>
+                        </li> 
+                        <div>
+                            <ul class="MenuList">
+                                <li class="ItemList"  /><a class="MenuLink"  th:href="@{/(lang=es)}">ES</a></li>
+                                <li class="ItemList" /><a class="MenuLink" th:href="@{/(lang=en)}">EN</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div> 
+            </nav>
+        </header>
+
+        <footer th:fragment="footer" class="footer">
+            <div class="container">
+                <div class="col">
+                    <p class="lead text-center">
+                        &COPY [[#{plantilla.derechos}]]
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
