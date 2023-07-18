@@ -11,8 +11,8 @@ import org.springframework.web.multipart.MultipartFile;
 public interface FirebaseStorageService {
     public String cargaImagen (MultipartFile archivoLocalCliente, String carpeta, Long id);
     
-    final String BucketName = "sanrio-320a4.appspot.com";
-    final String rutaSuperiorStorage = "sanrio";
+    final String BucketName = "TopHybeast-320a4.appspot.com";
+    final String rutaSuperiorStorage = "TopHybeast";
     final String rutaJsonFile = "firebase";
     final String archivoJsonFile = "sanrio-320a4-firebase-adminsdk-3tbbg-71eaa24cdc";
 }
