@@ -1,11 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.tienda.controller;
 
 import com.tienda.Service.ProductoService;
-import com.tienda.Service.imp.FirebaseStorageServiceImp;
+import com.tienda.Service.imp.FirebaseStorageServiceImpl;
 import com.tienda.domain.Producto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +34,7 @@ public class ProductoController {
     }
 
     @Autowired
-    private FirebaseStorageServiceImp firebaseStorageService;
+    private FirebaseStorageServiceImpl firebaseStorageService;
 
     @GetMapping("/guardar")
     public String productoGuardar(Producto producto, @RequestParam("imagenFile") MultipartFile imagenFile) {
@@ -68,4 +64,5 @@ public class ProductoController {
         model.addAttribute("producto", producto);
         return "redirect:/producto/listado";
     }
+   
 }

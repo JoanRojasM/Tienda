@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.tienda.controller;
 
 import com.tienda.domain.Categoria;
-import com.tienda.service.CategoriaService;
-import com.tienda.Service.imp.FirebaseStorageServiceImp;
+import com.tienda.Service.CategoriaService;
+import com.tienda.Service.imp.FirebaseStorageServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,7 +34,7 @@ public class CategoriaController {
     }
 
     @Autowired
-    private FirebaseStorageServiceImp firebaseStorageService;
+    private FirebaseStorageServiceImpl firebaseStorageService;
 
     @GetMapping("/guardar")
     public String categoriaGuardar(Categoria categoria, @RequestParam("imagenFile") MultipartFile imagenFile) {

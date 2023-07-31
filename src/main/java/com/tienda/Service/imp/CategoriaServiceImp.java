@@ -2,7 +2,7 @@ package com.tienda.Service.imp;
 
 import com.tienda.dao.CategoriaDao;
 import com.tienda.domain.Categoria;
-import com.tienda.service.CategoriaService;
+import com.tienda.Service.CategoriaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.tienda.service;
+package com.tienda.Service;
 
 import com.tienda.domain.Categoria;
 import java.util.List;

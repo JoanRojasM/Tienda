@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.tienda.Service;
 
 import com.tienda.domain.Producto;
@@ -9,7 +6,7 @@ import java.util.List;
 
 /**
  *
- * @author Joan Rojas
+ * @author JOANROJAS_
  */
 public interface ProductoService {
 

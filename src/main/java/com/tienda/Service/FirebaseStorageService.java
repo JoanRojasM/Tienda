@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.tienda.Service;
 
 import org.springframework.stereotype.Service;
@@ -11,8 +7,8 @@ import org.springframework.web.multipart.MultipartFile;
 public interface FirebaseStorageService {
     public String cargaImagen (MultipartFile archivoLocalCliente, String carpeta, Long id);
     
-    final String BucketName = "TopHybeast-320a4.appspot.com";
-    final String rutaSuperiorStorage = "TopHybeast";
+    final String BucketName = "TIENDA-320a4.appspot.com";
+    final String rutaSuperiorStorage = "TIENDA";
     final String rutaJsonFile = "firebase";
-    final String archivoJsonFile = "sanrio-320a4-firebase-adminsdk-3tbbg-71eaa24cdc";
+    final String archivoJsonFile = "TIENDA-320a4-firebase-adminsdk-3tbbg-71eaa24cdc";
 }

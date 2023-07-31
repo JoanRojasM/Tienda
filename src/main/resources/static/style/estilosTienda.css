@@ -1,18 +1,15 @@
-
-.header{
+.cabeza{
     position: fixed;
     top:0;
     left:0;
-    height:50px;
+    height:64px;
     width: 100%;
-    background-color: #006666;
-    color:#FF69A4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #273142;
+    color:#f7efd8;
 }
-
-.MenuGeneral{
-    display: flex;
-    list-style: none;
-    margin-top: 13px;
+.MenuCentro{
+    margin-top: 15px;
 }
 .MenuList{
     list-style: none;
@@ -36,7 +33,7 @@
 }
 
 a:hover{
-    color: #FF69A4;
+    color: #f7efd8;
     font-weight: bold;
 
 }
@@ -51,7 +48,8 @@ a:hover{
     padding-left: 35px;
     font-size: 60px;
     font-weight: 700;
-    color:  #FF69A4;
+    color:  #f7efd8;
+    font-family: 'Poppins', sans-serif;
 }
 
 .textHome2{
@@ -60,6 +58,7 @@ a:hover{
     font-size: 20px;
     font-weight: 400;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
@@ -72,10 +71,9 @@ h1{
 .articleList{
     margin-left: 26px;
     display: inline-block;
-    ;
     margin-top:  20px;
     list-style: none;
-    background-color: #F4E7EF;
+    background-color: #c8c8a9;
     padding-top: 20px;
     padding-right: 40px;
 }
@@ -86,7 +84,7 @@ h1{
     ;
     margin-top:  12px;
     list-style: none;
-    background-color: #F4E7EF;
+    background-color: #c8c8a9;
     padding-top: 34px;
     padding-right: 40px;
 }
@@ -94,10 +92,10 @@ h1{
 .articleListR2{
     margin-left: 26px;
     display: inline-block;
-    ;
+
     margin-top:  12px;
     list-style: none;
-    background-color: #F4E7EF;
+    background-color: #c8c8a9;
     padding-top: 42px;
     padding-right: 40px;
 }
@@ -111,14 +109,20 @@ h1{
     font-size: 14px;
     text-decoration: none;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 
-footer {
+.frase_container{
+    
+}
+
+.piePagina {
     padding: 3px;
     text-align: center;
-    background-color: #006666;
+    background-color: #273142;
     color: black;
     margin-right: -10px;
     margin-left: -10px;
     margin-bottom: -10px;
+    font-family: 'Poppins', sans-serif;
 }
